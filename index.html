@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl_PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock, Paper, Scissors</title>
+</head>
+
+<body>
+    <header class="menu">
+        <h1 class="menu__title">Welcome</h1>
+        <h3 class="menu__display">
+            <div class="score score__win">WIN: <span id="win">&nbsp0</span></div>
+            <div class="score score__lose">LOSE: <span id="lose">&nbsp0</span> </div></h3>
+    </header>
+    <section class="game">
+        <h2 class="game__title">
+        </h2>
+        <div class="game__wrapper">
+            <div class="playerSide">
+                <button id="scissors" class="select-btn scissors"></button>
+                <button id="rock" class="select-btn rock"></button>
+                <button id="paper" class="select-btn paper"></button>
+            </div>
+            <div class="computerSide">
+<div id="computer-token" class="computer-token"><img src="question-mark.svg" class="computer-token__img"/> 
+</div>
+
+            </div>
+        </div>
+    </section>
+    <div id="result"></div>
+    <script src="game.js"></script>
+    
+</body>
+
+</html>
