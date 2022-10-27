@@ -59,7 +59,7 @@ function getComputerToken() {
 
 }
 
-function tokenComper() {
+function tokenCompare() {
 
     switch (player) {
 
@@ -130,14 +130,14 @@ function switchToken() {
 //          document.getElementById("computer-token").classList.add("computer-token__lose"); 
 
 //         }
-//     else {document.getElementById("computer-token").classList.add("computer-token_tie"); }
-
+//     else {
+// document.getElementById("computer-token").classList.add("computer-token_tie"); }
 // }
 
 
 function main() {
 
-    tokenComper();
+    tokenCompare();
     switchToken();
     setTimeout(cover, 1500);
     getComputerToken();
